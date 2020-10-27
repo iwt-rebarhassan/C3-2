@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "deploy": "tsc && cdk deploy",
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk"
@@ -15,6 +16,8 @@
     "@aws-cdk/assert": "1.70.0",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
+    "@types/aws-lambda": "^8.10.64",
+    "@types/aws-sdk": "^2.7.0",
     "jest": "^26.4.2",
     "ts-jest": "^26.2.0",
     "ts-node": "^8.1.0",
@@ -24,6 +27,8 @@
     "@aws-cdk/aws-sns": "1.70.0",
     "@aws-cdk/aws-sns-subscriptions": "1.70.0",
     "@aws-cdk/aws-sqs": "1.70.0",
+    "@aws-cdk/aws-apigatewayv2": "^1.70.0",
+    "@aws-cdk/aws-dynamodb": "^1.70.0",
     "@aws-cdk/core": "1.70.0"
   }
 }
